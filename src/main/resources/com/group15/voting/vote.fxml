@@ -39,6 +39,7 @@
             <ChoiceBox fx:id="mp" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
             <ChoiceBox fx:id="mca" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <Button fx:id="submit" mnemonicParsing="false" onMouseClicked="#votervote" text="Submit" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+             <Button fx:id="back" mnemonicParsing="false" onMouseClicked="#goback" text="Back" GridPane.columnIndex="0" GridPane.rowIndex="7" />
          </children>
       </GridPane>
    </children>

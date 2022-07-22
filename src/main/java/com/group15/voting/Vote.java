@@ -42,7 +42,7 @@ public class Vote extends Application implements Initializable {
         stage.show();
     }
 
-    public void votervote(MouseEvent mouseEvent) throws SQLException {
+    public void votervote(MouseEvent mouseEvent) throws SQLException, IOException {
         //get choicebox values
         String presidentValue = president.getValue();
         String governorValue = governor.getValue();
@@ -70,6 +70,12 @@ public class Vote extends Application implements Initializable {
             if(status == 1){
                 System.out.println("User has voted");
                 JOptionPane.showMessageDialog(null, "You have already voted");
+
+                //close current window
+                Stage stage = (Stage) submit.getScene().getWindow();
+                stage.close();
+                //open homepage
+                new HomePage().start(stage);
             }else{
                 connect.updateTally(presidentValue, presidentTally);
                 connect.updateTally(governorValue, governorTally);
@@ -85,8 +91,15 @@ public class Vote extends Application implements Initializable {
                 //update voter status
                 String sql = "UPDATE users SET status = 1 WHERE id = '"+ Userdata.getUsername()+"'";
                 connect.updateData(sql);
+
+                //close current window
+                Stage stage = (Stage) submit.getScene().getWindow();
+                stage.close();
+                //open homepage
+                new HomePage().start(stage);
             }
         }
+
 
 
     }
@@ -129,5 +142,13 @@ public class Vote extends Application implements Initializable {
             throw new RuntimeException(e);
         }
         return -1;
+    }
+
+    public void goback(MouseEvent mouseEvent) throws IOException {
+        //close current window
+        Stage stage = (Stage) submit.getScene().getWindow();
+        stage.close();
+        //open homepage
+        new HomePage().start(stage);
     }
 }

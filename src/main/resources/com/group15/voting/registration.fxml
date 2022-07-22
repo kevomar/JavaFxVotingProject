@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="800" maxWidth="800" minHeight="300" minWidth="300" prefHeight="520.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group15.voting.Registration">
+<AnchorPane maxHeight="800" maxWidth="800" minHeight="300" minWidth="300" prefHeight="520.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group15.voting.Registration">
     <GridPane layoutX="26.0" layoutY="62.0" prefHeight="259.0" prefWidth="487.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -39,5 +32,6 @@
         <TextField fx:id="voterId" GridPane.columnIndex="1" GridPane.rowIndex="2" />
         <PasswordField fx:id="voterPassword" GridPane.columnIndex="1" GridPane.rowIndex="4" />
         <PasswordField fx:id="voterConfirmPassword" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onMouseClicked="#backtohomepage" text="Back" GridPane.rowIndex="7" />
     </GridPane>
 </AnchorPane>

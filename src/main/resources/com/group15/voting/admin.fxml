@@ -10,14 +10,13 @@
          <children>
             <Button mnemonicParsing="false" onMouseClicked="#openRegisterCandidates" text="Register Candidates" />
             <Button mnemonicParsing="false" onMouseClicked="#openViewCandidates" text="View Candidates" />
-            <Button mnemonicParsing="false" text="Exit" />
+            <Button mnemonicParsing="false" text="Exit" onMouseClicked="#gotohomepage"/>
          </children>
       </VBox>
-      <VBox alignment="CENTER" layoutX="332.0" onMouseClicked="#openViewUsers" prefHeight="406.0" prefWidth="336.0" spacing="50.0">
+      <VBox alignment="CENTER" layoutX="332.0" prefHeight="406.0" prefWidth="336.0" spacing="50.0">
          <children>
-            <Button alignment="CENTER" mnemonicParsing="false" text="Create Poll/Election" />
-            <Button mnemonicParsing="false" onMouseClicked="#openViewUsers" text="View eligible voters" />
             <Button mnemonicParsing="false" onMouseClicked="#openViewResults" text="View Results" />
+            <Button mnemonicParsing="false" onMouseClicked="#openViewUsers" text="View eligible voters" />
          </children>
       </VBox>
    </children>

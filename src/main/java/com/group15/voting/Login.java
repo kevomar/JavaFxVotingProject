@@ -1,7 +1,6 @@
 package com.group15.voting;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
@@ -95,7 +94,7 @@ public class Login extends Application {
 
     }
 
-    public void openRegisterPage(ActionEvent mouseEvent) throws IOException {
+    public void openRegisterPage(MouseEvent mouseEvent) throws IOException {
         //open register.fxml
         //close current window
         stage = (Stage) ((javafx.scene.Node) mouseEvent.getSource()).getScene().getWindow();

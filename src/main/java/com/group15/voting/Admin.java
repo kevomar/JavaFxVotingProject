@@ -62,4 +62,13 @@ public class Admin extends Application{
             e.printStackTrace();
         }
     }
+
+    public void gotohomepage(MouseEvent mouseEvent) throws IOException {
+        //close current window
+        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+        stage.close();
+        //open new window
+        HomePage homepage = new HomePage();
+        homepage.start(stage);
+    }
 }

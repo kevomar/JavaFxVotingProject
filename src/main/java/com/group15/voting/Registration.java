@@ -36,7 +36,7 @@ public class Registration extends Application {
             //Create an Object of Connect class
             Connect connect = new Connect();
             //Create a query to insert the user in the database
-            String query = "INSERT INTO users (firstname, lastname, national_id, password ,status) VALUES ('" + firstnameField.getText() + "', '" + lastnameField.getText() + "', '" + idField.getText() + "', '" + passwordField.getText() + "' , '" + 0 + "')";
+            String query = "INSERT INTO users (firstname, lastname, id, password ,status) VALUES ('" + firstnameField.getText() + "', '" + lastnameField.getText() + "', '" + idField.getText() + "', '" + passwordField.getText() + "' , '" + 0 + "')";
             //execute query
             connect.insert(query);
             //show seccess message
@@ -54,5 +54,14 @@ public class Registration extends Application {
         //insert the data into the database
         //show confirmation dialog box
         //go to login.fxml
+    }
+
+    public void backtohomepage(MouseEvent mouseEvent) throws IOException {
+        //close current window
+        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+        stage.close();
+        //open homepage
+        HomePage homepage = new HomePage();
+        homepage.start(stage);
     }
 }

@@ -127,4 +127,13 @@ public class Results extends Application {
         }
         return query;
     }
+
+    public void goBack(MouseEvent mouseEvent) throws IOException {
+        //close current window
+        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
+        stage.close();
+        //open viewResults.fxml
+        HomePage homePage = new HomePage();
+        homePage.start(stage);
+    }
 }

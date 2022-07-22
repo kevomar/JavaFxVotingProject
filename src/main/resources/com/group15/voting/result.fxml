@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group15.voting.Results">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.group15.voting.Results">
    <children>
       <GridPane alignment="CENTER" hgap="10.0" layoutX="38.0" layoutY="68.0" prefHeight="267.0" prefWidth="427.0" vgap="10.0">
         <columnConstraints>
@@ -28,5 +24,6 @@
             <Button mnemonicParsing="false" onMouseClicked="#opensview" text="Senator Results" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
+      <Button layoutX="103.0" layoutY="335.0" mnemonicParsing="false" onMouseClicked="#goBack" text="Back" />
    </children>
 </AnchorPane>

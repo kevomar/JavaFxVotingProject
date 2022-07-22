@@ -68,7 +68,6 @@ public class ViewResults extends Application implements Initializable {
         stage.setTitle("Results");
         stage.setScene(scene);
         stage.show();
-        System.out.println(query);
     }
 
 
@@ -76,5 +75,11 @@ public class ViewResults extends Application implements Initializable {
         //close the window
         Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
         stage.close();
+        Results results = new Results();
+        try {
+            results.start(stage);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

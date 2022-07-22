@@ -10,12 +10,12 @@
     <children>
         <HBox alignment="CENTER" layoutX="14.0" layoutY="79.0" prefHeight="100.0" prefWidth="586.0" spacing="100.0">
             <children>
-                <Button mnemonicParsing="false" onAction="#voteClick" text="Login">
+                <Button mnemonicParsing="false" onAction="#voteClick" text="Login/Vote">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" onAction="#chngDetailsClick" text="Change Details">
+                <Button mnemonicParsing="false" onAction="#openRegisterPage" text="Register">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
@@ -23,24 +23,17 @@
             </children></HBox>
         <HBox alignment="CENTER" layoutX="14.0" layoutY="179.0" prefHeight="100.0" prefWidth="586.0" spacing="100.0">
             <children>
-                <Button mnemonicParsing="false" onAction="#openRegisterPage" text="Register">
-                    <font>
-                        <Font name="System Bold" size="12.0" />
-                    </font>
-                </Button>
             <Button layoutX="275.0" layoutY="48.0" mnemonicParsing="false" onAction="#resultsClick" text="Results">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            </children></HBox>
-        <HBox alignment="CENTER" layoutX="14.0" layoutY="279.0" prefHeight="100.0" prefWidth="586.0">
-            <children>
                 <Button mnemonicParsing="false" onAction="#exitClick" text="Exit">
                     <font>
                         <Font name="System Bold" size="12.0" />
                     </font>
                 </Button>
             </children></HBox>
+        <HBox alignment="CENTER" layoutX="14.0" layoutY="279.0" prefHeight="100.0" prefWidth="586.0" />
     </children>
 </AnchorPane>
